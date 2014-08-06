@@ -9,8 +9,8 @@ public class Greeter {
         LogManager.getRootLogger().info("generating greeting.");
         InputStream greetingStr = getClass().getResourceAsStream("/greeting.txt");
        
+        
         try {
-        	
             return IOUtils.toString(greetingStr).trim();
         }
         finally {
