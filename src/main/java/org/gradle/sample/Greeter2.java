@@ -10,7 +10,6 @@ public class Greeter {
         InputStream greetingStr = getClass().getResourceAsStream("/greeting.txt");
        
         try {
-        	
             return IOUtils.toString(greetingStr).trim();
         }
         finally {
